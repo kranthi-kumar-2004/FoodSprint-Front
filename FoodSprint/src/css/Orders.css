@@ -1,0 +1,9 @@
+.ord div{
+    border: 3px solid pink;
+    padding: 30px;
+    margin: 4px;
+}
+button{
+    cursor: pointer;
+    padding: 2px;
+}
