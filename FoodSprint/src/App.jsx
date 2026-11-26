@@ -1,21 +1,16 @@
-import {BrowserRouter, Routes,Route, Link} from "react-router-dom";
-import Home from "./components/Home.jsx"
-import Orders from "./components/Orders.jsx";
-import Restaurant from "./components/Restaurant.jsx";
-function App(){
-    return(
-      <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link>{" | "}
-        <Link to="/orders">Orders</Link>{" | "}
-        <Link to="/Restaurant">Restaurant Menu</Link>{" | "}
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/orders" element={<Orders/>}/>
-        <Route path="/Restaurant" element={<Restaurant/>}/>
-      </Routes>
-      </BrowserRouter>
-    );
+import LandingPage from "./components/LandingPage"
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom'
+import Home from "./components/Home"
+import RestaurantItems from "./components/RestaurantItems"
+function App() {
+  return (
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Home></Home>}/>
+        <Route path="/restarunet" element={<RestaurantItems/>}/>
+    </Routes>
+    </BrowserRouter>
+  );
 }
+
 export default App;
